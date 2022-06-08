@@ -37,10 +37,25 @@ header {
   place-content: center;
 }
 
+.search-section .material-symbols-outlined {
+  padding: 0.5rem;
+  color: #fff;
+}
+
+#search {
+  border: solid 0.5px rgb(191, 190, 190);
+  border-right: none;
+  padding: 0.5rem;
+}
+.search-icon {
+  background-color: #ef1d26;
+  border: none;
+}
+
 main {
   grid-area: main;
   grid-template:
-    "nav" 40px
+    "nav-bar" 40px
     "main-news" 1fr
     "latest-news" 1fr/
     1fr;
@@ -48,27 +63,39 @@ main {
   padding: 1rem 2rem;
 }
 
-.nav {
+.nav-bar {
   display: grid;
   background-color: #232323;
-  justify-content: center;
-  align-items: center;
+  place-content: center;
+  place-items: center;
+  padding: 1.5rem;
 }
 
 a {
   text-decoration: none;
   color: white;
-  place-content: center;
-  place-items: center;
+  transition: 0.3s;
+}
+
+.nav-bar-list{
+
 }
 
 ul {
   list-style: none;
+  transition: 1s;
+}
+.link-nav-bar:hover {
+  background-color: #ef1d26;
 }
 
 li {
   display: inline;
   padding: 0.5rem;
+}
+
+.link-nav-bar {
+  padding: 1rem;
 }
 
 footer {
@@ -112,7 +139,6 @@ footer {
   transform-origin: center center;
   transition: transform 0.5s;
   width: 100%;
- 
 }
 
 .carousel__nav {
@@ -161,25 +187,24 @@ footer {
   margin-right: 35rem;
   margin-left: 5rem;
   margin-bottom: 10rem;
-gap: 1rem;
-padding: 1rem;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-h5{
-
+h5 {
   background-color: #ef1d26;
   padding: 1rem;
 }
-.news-text p{
+.news-text p {
   background-color: #5a5959;
   padding: 1rem;
 }
 
 .carousel {
-  border-top: solid 2px black;
+  border-top: solid 1px black;
 }
 
 h2 {
-  margin-top: 20px;
+  margin-top: 1rem;
   color: #ef1d26;
 }
