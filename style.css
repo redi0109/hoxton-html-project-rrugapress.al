@@ -45,6 +45,7 @@ main {
     "latest-news" 1fr/
     1fr;
   display: grid;
+  padding: 1rem 2rem;
 }
 
 .nav {
@@ -104,14 +105,14 @@ footer {
   font-size: 100px;
   height: 600px;
   justify-content: center;
-  margin: 1rem 1rem;
+  margin: 1rem;
   position: relative;
   scroll-snap-align: start;
   transform: scale(1);
   transform-origin: center center;
   transition: transform 0.5s;
   width: 100%;
-  border-top: 1px solid #252730;
+ 
 }
 
 .carousel__nav {
@@ -155,21 +156,30 @@ footer {
 }
 
 .news-text {
-  align-items: flex-end;
+  display: grid;
+  margin-top: 25rem;
+  margin-right: 35rem;
+  margin-left: 5rem;
+  margin-bottom: 10rem;
+gap: 1rem;
+padding: 1rem;
 }
 
-.slide-2 {
-  background-color: #bfd;
+h5{
+
+  background-color: #ef1d26;
+  padding: 1rem;
+}
+.news-text p{
+  background-color: #5a5959;
+  padding: 1rem;
 }
 
-.slide-3 {
-  background-color: #cdf;
+.carousel {
+  border-top: solid 2px black;
 }
 
-.slide-4 {
-  background-color: #dca;
-}
-
-.slide-5 {
-  background-color: #ffc;
+h2 {
+  margin-top: 20px;
+  color: #ef1d26;
 }
