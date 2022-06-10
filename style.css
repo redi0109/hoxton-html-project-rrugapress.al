@@ -23,7 +23,7 @@ header {
   align-items: center;
 }
 .logo-section {
-  padding-left: 5rem;
+  padding-left: 9rem;
   display: flex;
   place-content: start;
 }
@@ -100,11 +100,10 @@ li {
 footer {
   grid-area: footer;
   background-color: #252730;
-display: flex;
+  display: flex;
   color: #62696d;
   padding: 1rem;
   place-content: center;
-
 }
 
 .carousel {
@@ -272,7 +271,7 @@ h2 {
   place-items: center;
   background-image: url(https://imgs.search.brave.com/ZfXJYYo_54Vu1El_-PGmlchonMXaZWFMzw0Q4xP95-k/rs:fit:1200:974:1/g:ce/aHR0cHM6Ly9mc2hm/Lm9yZy93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMS8wNS9DNTQz/Q0IxNS01RTU4LTQw/MjUtQTdBRC0yRTQ2/MjY4NENEMzguanBl/Zw);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: flex;
 }
 .sport-title {
   display: grid;
@@ -307,28 +306,82 @@ h2 {
   padding: 5rem;
 }
 
-.read-editorial h2{
+.read-editorial h2 {
   font-size: larger;
 }
 
-.article-section{
+.article-section {
   display: grid;
   gap: 1.5rem;
   margin-top: 2rem;
   color: #5a5959;
 }
 
-.read-sport{
-
+.read-sport {
   display: grid;
   place-items: center;
   gap: 1rem;
   padding: 5rem;
 }
 
-
-.sport-article-img{
+.sport-article-img {
   width: 100%;
   height: auto;
+}
+
+
+
+
+@media screen and (max-width: 375px) {
+footer{
+  display: none;
+}
+header{
+  place-items: center;
+  display:block;
+}
+
+main{
+  place-items: center;
+}
+.carousel{
+  width: 100vw;
+place-items: center;
+}
+
+.news-text{
+width: 100vw;
+place-items: center;
+}
+
+.nav-bar{
+  width: auto;
+  justify-content: center;
+  font-size: 1rem;
+padding: 0;
+  display: block;
+  grid-auto-flow: row;
+}
+
+.logo-section{
+  padding-left: 5.5rem;
+  place-items: center;
+}
+
+.slide-1 {
+  background-image: url(https://i.guim.co.uk/img/media/bdb0fdc87f4b5900b0879c7d9fa1cf09a3d973fa/1241_56_4336_2601/master/4336.jpg?width=620&quality=85&auto=format&fit=max&s=a5711ba351f794a45633e924b3544b09);
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+.news-text {
+  display: grid;
+  place-items: center;
+  font-size: small;
+ }
+
+
+
+
 }
 
